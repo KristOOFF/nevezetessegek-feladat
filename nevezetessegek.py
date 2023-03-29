@@ -6,7 +6,7 @@ class Nevezetesseg:
         self.epult = epult
 
     def __str__(self) -> str:
-        return f"{self.nev} {self.orszag} {self.varos}"
+        return f"{self.nev} {self.orszag} {self.varos} {self.epult}"
 
 csv = open("./nevezetessegek.csv", encoding="UTF-8")
 
@@ -50,4 +50,4 @@ while valasztas != 4:
         varosnev = input("Adj meg egy várost: ")
         for nevezetesseg in nevezetessegek:
             if varosnev == nevezetesseg.varos:
-                print(f"{nevezetesseg.nev} {nevezetesseg.orszag}")
+                print(f"{nevezetesseg.nev} {nevezetesseg.orszag} {nevezetesseg.epult}") 
